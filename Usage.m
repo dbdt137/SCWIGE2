@@ -2,7 +2,7 @@
 
 (* Wolfram Language package *)
 
-BeginPackage["SCWIGE`"]
+BeginPackage["SCWIGE2`"]
 (* Exported symbols added here with SymbolName::usage *)  
 
 
