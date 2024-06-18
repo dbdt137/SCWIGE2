@@ -2,7 +2,7 @@
 
 (* Created by the Wolfram Workbench Mar 8, 2023 *)
 
-Block[{Print},Quiet[BeginPackage["SCWIGE`",{"TensorTools`","GroupMath`"}]]]
+Block[{Print},Quiet[BeginPackage["SCWIGE2`",{"TensorTools`","GroupMath`"}]]]
 (* Exported symbols added here with SymbolName::usage *) 
 
 Begin["`Private`"]
