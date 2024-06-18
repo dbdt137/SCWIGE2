@@ -1440,8 +1440,8 @@ DeclareAlgebra[OptionsPattern[]] := Module[{},
 	Commutator[$QBarTensor, Tensor[{{"\[PartialD]", ___}}]] = 0;
 ];
 
-quadraticZero[op_] := quadraticZero[op] = NormalOrder[TensorProduct[$QTensor, $QBarTensor, Tensor[{op}]] + TensorProduct[$QBarTensor, $QTensor, Tensor[{op}]], "Vacuum" -> True] - 
- 2 I TensorProduct[Kronecker[RIndex[fundRep[$RSymmetry]]], Tensor[{{"\[PartialD]", Lowered[Spinor], Lowered[DottedSpinor]}}], Tensor[{op}]];
+quadraticZero[op_] := quadraticZero[op] = NormalOrder[TensorProduct[$QTensor, $QBarTensor, Tensor[{op}]] + TensorProduct[$QBarTensor, $QTensor, Tensor[{op}]], "Vacuum" -> True] + 
+ (1/2) TensorProduct[Kronecker[RIndex[fundRep[$RSymmetry]]], Tensor[{{"\[PartialD]", Lowered[Spinor], Lowered[DottedSpinor]}}], Tensor[{op}]];
  
 (*solveGroups[{}, vars_, rules_, assum_] := {};
 solveGroups[grps_, vars_, rules_, assum_] := With[{sol = Quiet[Solve[Join[(grps[[1]] /. rules), assum], vars]][[1]]},
