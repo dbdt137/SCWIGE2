@@ -282,4 +282,4 @@ wizardPanel[] := Panel[Grid[{{"", "", Style["Setup Wizard", 20],
   Spacings -> {Automatic, 2}, Dividers -> {True, All}], 
  Background -> Lighter[Gray, 0.9]];
 
-wizardCell = CellPrint[ExpressionCell[SCWIGE`Private`wizardPanel[], TextAlignment -> Center]]
+wizardCell = CellPrint[ExpressionCell[SCWIGE2`Private`wizardPanel[], TextAlignment -> Center]]
