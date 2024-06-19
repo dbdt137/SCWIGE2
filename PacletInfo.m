@@ -3,7 +3,7 @@
 (* created 2023.03.08*)
 
 Paclet[
-  Name -> "SCWIGE",
+  Name -> "SCWIGE2",
   Version -> "0.0.1",
   WolframVersion -> "6+",
   Extensions -> {
