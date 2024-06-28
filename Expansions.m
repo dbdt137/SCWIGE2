@@ -166,7 +166,7 @@ ExpandCorrelator[Correlator[Tensor[names_], opt: OptionsPattern[]]] /; (AllTrue[
      sign Sum[
        Switch[{Length[names], OptionValue[Correlator, "Defect"]},
           {2, False},
-          I^(2 Abs[Subtract @@ Spin[fields[[1]]]]),
+          1^(2 Abs[Subtract @@ Spin[fields[[1]]]]),
           {3, False}, 
           \[Lambda][sfields,i,j], 
           {4, False},
